@@ -42,7 +42,7 @@ namespace AjaxApi.Controllers
                     string snPath = $"{dirPath + fileNam}";//储存文件路径
                     using var stream = new FileStream(snPath, FileMode.Create);
                     await file.CopyToAsync(stream);
-                    //次出还可以进行数据库操作 保存到数据库
+                    //此处还可以进行数据库操作 保存到数据库
                     ret = new OutPut { Code = 200, Msg = "上传成功", Success = true };
                 }
                 else//没有图片

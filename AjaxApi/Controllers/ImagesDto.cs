@@ -26,7 +26,5 @@
         /// 类型
         /// </summary>
         public int Type { get; set; }
-    }
-
-    
+    }    
 }
